@@ -5,6 +5,7 @@ All notable, unreleased changes to this project will be documented in this file.
 ## [Unreleased]
 - Added links instead of imperative navigation with onClick - #1969 by @taniotanio7
 - Fixed clearing attribute values - #2047 by @witoszekdev
+- Improvements to the app list page: added toggle and permision preview - #2035 by @witoszekdev
 
 ## 3.1
 ### PREVIEW FEATURES
