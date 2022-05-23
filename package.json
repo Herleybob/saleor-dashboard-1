@@ -254,7 +254,7 @@
   "scripts": {
     "build-storybook": "build-storybook -c src/storybook/ -o build/storybook",
     "build-types": "graphql-codegen",
-    "build": "npm run build-types && webpack -p --host 0.0.0.0",
+    "build": "npm run build-types && webpack -p --host 0.0.0.0 --port 80",
     "check-strict-null-errors": "tsc --noEmit --strictNullChecks | node scripts/count-strict-null-check-errors.js",
     "check-types": "tsc --noEmit",
     "extract-json-messages": "formatjs extract 'src/**/*.{ts,tsx}' --out-file locale/defaultMessages.json --format scripts/formatter.js",
@@ -262,7 +262,7 @@
     "fetch-schema": "graphql-codegen --config ./fetch-schema.yml && node scripts/build-schema.js",
     "heroku-postbuild": "npm run build",
     "serve:lhci": "NODE_ENV=production npm run server",
-    "start": "npm run build-types && webpack-dev-server -d --host 0.0.0.0",
+    "start": "npm run build-types && webpack-dev-server -d --host 0.0.0.0 --port 80",
     "storybook": "start-storybook -p 3000 -c src/storybook/",
     "cy:run": "cypress run",
     "cy:run:report": "cypress run --env tags=all --reporter cypress-mochawesome-reporter --reporter-options reportDir='cypress/reports',overwrite=true,charts=true",
