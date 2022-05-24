@@ -109,7 +109,8 @@ module.exports = speedMeasureWrapper((env, argv) => {
       contentBase: path.join(__dirname, dashboardBuildPath),
       historyApiFallback: true,
       hot: true,
-      port: 9000
+      port: 80,
+      public: 'admin.gallagherpowerproducts.com'
     },
     devtool: devMode ? "cheap-module-source-map" : "source-map",
     entry: {
